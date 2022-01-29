@@ -19,6 +19,7 @@ public class CameraFilterSwitcher : MonoBehaviour
                 edgeDetectionFilter.SetActive(false);
                 break;
             case CameraFilterType.EdgeDetection:
+                blurFilter.SetActive(false);
                 depthMaskFilter.SetActive(false);
                 edgeDetectionFilter.SetActive(true);
                 break;
