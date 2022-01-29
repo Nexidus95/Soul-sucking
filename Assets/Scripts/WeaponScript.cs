@@ -130,6 +130,7 @@ public class WeaponScript : MonoBehaviour
             Invoke("Shoot", timeBetweenShots);
         }
     }
+
     private void ResetShot()
     {
         readytoshoot = true;
@@ -141,6 +142,7 @@ public class WeaponScript : MonoBehaviour
         reloading = true;
         Invoke("ReloadFinished", reloadTime);
     }
+
     private void ReloadFinished()
     {
         bulletsleft = magazineSize;

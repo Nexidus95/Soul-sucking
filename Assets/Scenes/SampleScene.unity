@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -477,7 +477,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &525445798
 GameObject:
@@ -573,7 +573,7 @@ RectTransform:
   m_Children:
   - {fileID: 1077467366}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -827,7 +827,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1454025100
 GameObject:
@@ -934,6 +934,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1693350157402258600, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1999199312194714922, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
       propertyPath: m_Name
       value: Player
@@ -983,31 +987,76 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1999199312610539079, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 1102949101}
-    - target: {fileID: 1999199312610539079, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
       propertyPath: ammoDisplay
       value: 
       objectReference: {fileID: 1077467367}
-    - target: {fileID: 1999199312610539079, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
-      propertyPath: recoilForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1999199312610539079, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
-      propertyPath: bulletsPerTap
+    - target: {fileID: 2394845906502573573, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1999199312610539079, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
-      propertyPath: bulletsperTap
-      value: 1
+    - target: {fileID: 2394845906502573594, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1999199312610539079, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
-      propertyPath: timeBetweenShots
-      value: 0.5
+    - target: {fileID: 4929014393376256926, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963589963656022274, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
+--- !u!54 &1999199312677033612 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 1999199312194714915, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
+  m_PrefabInstance: {fileID: 1999199312677033611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1999199312677033614 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5705129258243516708, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
+  m_PrefabInstance: {fileID: 1999199312677033611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1999199312677033615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4929014393376256926, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
+  m_PrefabInstance: {fileID: 1999199312677033611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1999199312677033616 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1999199312714603132, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
+  m_PrefabInstance: {fileID: 1999199312677033611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1999199312677033617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999199312677033615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd1b1698eb95d84ca8cc56617f021f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
+  shootForce: 0
+  upwardForce: 0
+  timeBetweenShooting: 0
+  spread: 0
+  reloadTime: 0
+  timeBetweenShots: 0
+  magazineSize: 0
+  bulletsPerTap: 0
+  allowButtonHold: 0
+  player: {fileID: 1999199312677033612}
+  recoilForce: 0
+  fpsCam: {fileID: 1999199312677033616}
+  attackPoint: {fileID: 1999199312677033614}
+  allowInvoke: 1
+  muzzleFlash: {fileID: 0}
+  ammoDisplay: {fileID: 0}
 --- !u!1001 &2451175602759481895
 PrefabInstance:
   m_ObjectHideFlags: 0
