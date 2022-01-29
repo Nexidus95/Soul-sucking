@@ -5,7 +5,7 @@ public class WeaponRotate : MonoBehaviour
 {
 
     private float desiredRot;
-    public float rotSpeed = 250;
+    public float rotSpeed = 100;
     public float damping = 10;
 
     private void OnEnable()
