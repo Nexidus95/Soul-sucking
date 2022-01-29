@@ -2502,7 +2502,7 @@ GameObject:
   - component: {fileID: 832929739}
   - component: {fileID: 832929740}
   m_Layer: 0
-  m_Name: FPSController
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3015,8 +3015,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 496abaadbf58a5349848c342aa3a0838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 100
-  playerBody: {fileID: 0}
+  mouseSensitivity: 500
+  playerBody: {fileID: 832929736}
 --- !u!4 &1051095695 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 434982, guid: 6812e31ceb91fc04da03973c6b1054cd, type: 3}
