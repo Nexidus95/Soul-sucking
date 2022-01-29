@@ -14,6 +14,7 @@ public class Bullet : MonoBehaviour
 
     public int explosionDamage;
     public float explosionRange;
+    public float explosionForce;
 
     public int maxCollisions;
     public float maxLifetime;
@@ -40,7 +41,10 @@ public class Bullet : MonoBehaviour
         Collider[] enemies = Physics.OverlapSphere(transform.position, explosionRange, whatIsEnemies);
         for(int i = 0; i < enemies.Length; i++)
         {
-           // enemies[i].GetComponent<ShootingAi>().TakeDamage(explosionDamage);
+           enemies[i].GetComponent<EnemyScript>().TakeDamage(explosionDamage);
+
+            if (enemies[i].GetComponent<Rigidbody>())
+                enemies[i].GetComponent<Rigidbody>().AddExplosionForce(explosionForce, transform.position, explosionRange);
         }
         Invoke("Delay", 0.05f);
     }
@@ -52,6 +56,9 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.CompareTag("Bullet")) return;
+
+        if (collision.collider.CompareTag("Bullet")) Delay();
+
 
         collisions++;
 
