@@ -13,11 +13,14 @@ public class WeaponScript : MonoBehaviour
 
     //Gun stats
     public float timeBetweenShooting, spread, reloadTime, timeBetweenShots;
-    public int magazineSize, bulletsperTap;
+    public int magazineSize, bulletsPerTap;
     public bool allowButtonHold;
 
     int bulletsleft, bulletsshot;
     bool shooting, readytoshoot, reloading;
+
+    public Rigidbody player;
+    public float recoilForce;
 
     public Camera fpsCam;
     public Transform attackPoint;
@@ -41,7 +44,7 @@ public class WeaponScript : MonoBehaviour
 
         if(ammoDisplay != null)
         {
-            ammoDisplay.SetText(bulletsleft / bulletsperTap + "/" + magazineSize / bulletsperTap);
+            ammoDisplay.SetText(bulletsleft / bulletsPerTap + "/" + magazineSize / bulletsPerTap);
         }
     }
 
@@ -106,6 +109,7 @@ public class WeaponScript : MonoBehaviour
 
         currentBullet.GetComponent<Rigidbody>().AddForce(directionWithSpread.normalized * shootForce, ForceMode.Impulse);
         currentBullet.GetComponent<Rigidbody>().AddForce(fpsCam.transform.up * upwardForce, ForceMode.Impulse);
+
         if(muzzleFlash != null)
         {
             Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
@@ -118,8 +122,10 @@ public class WeaponScript : MonoBehaviour
         {
             Invoke("ResetShot", timeBetweenShooting);
             allowInvoke = false;
+
+            player.AddForce(-directionWithSpread.normalized * recoilForce, ForceMode.Impulse);
         }
-        if(bulletsshot < bulletsperTap && bulletsleft > 0)
+        if(bulletsshot < bulletsPerTap && bulletsleft > 0)
         {
             Invoke("Shoot", timeBetweenShots);
         }
