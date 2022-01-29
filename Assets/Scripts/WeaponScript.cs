@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class WeaponScript : MonoBehaviour
 {
@@ -23,6 +24,9 @@ public class WeaponScript : MonoBehaviour
 
     public bool allowInvoke = true;
 
+    public GameObject muzzleFlash;
+    public TextMeshProUGUI ammoDisplay;
+
 
     private void Awake()
     {
@@ -34,6 +38,11 @@ public class WeaponScript : MonoBehaviour
     private void Update()
     {
         MyInput();
+
+        if(ammoDisplay != null)
+        {
+            ammoDisplay.SetText(bulletsleft / bulletsperTap + "/" + magazineSize / bulletsperTap);
+        }
     }
 
     private void MyInput()
