@@ -37,7 +37,6 @@ public class CameraFilterSwitcher : MonoBehaviour
 
     public void SwitchDimension()
     {
-        Debug.Log($"switchiiiing {depthMaskFilter.activeSelf}");
         if (!depthMaskFilter.activeSelf)
             SwitchFilter(CameraFilterType.DepthMask);
         else

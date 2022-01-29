@@ -175,6 +175,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!54 &627377512 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 1999199312194714915, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
+  m_PrefabInstance: {fileID: 1425191874}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &653713878
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +404,7 @@ GameObject:
   - component: {fileID: 1010253141}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: MaterialOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -513,7 +518,7 @@ GameObject:
   - component: {fileID: 1394662409}
   m_Layer: 0
   m_Name: Box
-  m_TagString: Untagged
+  m_TagString: SpiritOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -651,6 +656,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1999199312610539079, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 627377512}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
 --- !u!1 &1702665949
