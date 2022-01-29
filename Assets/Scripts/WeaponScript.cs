@@ -106,6 +106,11 @@ public class WeaponScript : MonoBehaviour
 
         currentBullet.GetComponent<Rigidbody>().AddForce(directionWithSpread.normalized * shootForce, ForceMode.Impulse);
         currentBullet.GetComponent<Rigidbody>().AddForce(fpsCam.transform.up * upwardForce, ForceMode.Impulse);
+        if(muzzleFlash != null)
+        {
+            Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
+        }
+
         bulletsleft--;
         bulletsshot++;
 
