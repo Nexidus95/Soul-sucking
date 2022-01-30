@@ -42,6 +42,5 @@ public class PlayerMovement : MonoBehaviour
     {
         int soundIndex = Random.Range(1, 5);
         FindObjectOfType<AudioManager>().Play($"step_wood", soundIndex);
-        Debug.Log($"Sound trigger {soundIndex}");
     }
 }

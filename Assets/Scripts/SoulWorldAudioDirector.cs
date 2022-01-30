@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class SoulWorldAudioDirector : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Sound[] sounds;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
