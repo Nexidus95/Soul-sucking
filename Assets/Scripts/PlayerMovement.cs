@@ -33,5 +33,15 @@ public class PlayerMovement : MonoBehaviour
 
         moveVector.y -= gravity * Time.deltaTime;
         characterController.Move(moveVector * Time.deltaTime);
+
+        if (move.magnitude > 0 && characterController.isGrounded)
+            TriggerWalkSound();
+    }
+
+    void TriggerWalkSound()
+    {
+        int soundIndex = Random.Range(1, 5);
+        FindObjectOfType<AudioManager>().Play($"step_wood", soundIndex);
+        Debug.Log($"Sound trigger {soundIndex}");
     }
 }

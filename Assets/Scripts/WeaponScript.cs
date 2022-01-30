@@ -113,6 +113,7 @@ public class WeaponScript : MonoBehaviour
         if(muzzleFlash != null)
         {
             Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().PlayRandom($"laser", 1, 4);
         }
 
         bulletsleft--;

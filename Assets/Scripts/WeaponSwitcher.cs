@@ -39,6 +39,7 @@ public class WeaponSwitcher : MonoBehaviour
         switch (weaponType)
         {
             case WeaponType.Sword:
+                FindObjectOfType<AudioManager>().Play($"weapon_switch_sword");
                 gun.SetActive(false);
                 sword.SetActive(true);
                 soulSucker.SetActive(false);
@@ -49,6 +50,7 @@ public class WeaponSwitcher : MonoBehaviour
                 soulSucker.SetActive(true);
                 break;
             case WeaponType.Gun:
+                FindObjectOfType<AudioManager>().Play($"weapon_switch_gun");
                 gun.SetActive(true);
                 sword.SetActive(false);
                 soulSucker.SetActive(false);
