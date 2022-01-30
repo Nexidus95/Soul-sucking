@@ -433,6 +433,42 @@ MonoBehaviour:
     pitch: 0.75
     source: {fileID: 0}
     loop: 0
+  - name: tutorial_mat
+    clip: {fileID: 8300000, guid: f59d698307da3da46a3ce3404cbea4e3, type: 3}
+    volume: 0.905
+    pitch: 0.75
+    source: {fileID: 0}
+    loop: 1
+  - name: tutorial_soul
+    clip: {fileID: 8300000, guid: 66094740935fb3e4aaf98d85793ff83f, type: 3}
+    volume: 0.905
+    pitch: 0.75
+    source: {fileID: 0}
+    loop: 1
+  - name: level1_mat
+    clip: {fileID: 8300000, guid: d44e2a5a07620ad4bbea699fa142b63f, type: 3}
+    volume: 0.905
+    pitch: 0.75
+    source: {fileID: 0}
+    loop: 1
+  - name: level1_soul
+    clip: {fileID: 8300000, guid: a3f73f3e189196041837711bee7e1fcc, type: 3}
+    volume: 0.905
+    pitch: 0.75
+    source: {fileID: 0}
+    loop: 1
+  - name: boss_mat
+    clip: {fileID: 8300000, guid: 312c4dc9af51cfe4493fdc761699487f, type: 3}
+    volume: 0.905
+    pitch: 0.75
+    source: {fileID: 0}
+    loop: 1
+  - name: boss_soul
+    clip: {fileID: 8300000, guid: 68ce4b2f659d575429bf891812f922a5, type: 3}
+    volume: 0.905
+    pitch: 0.75
+    source: {fileID: 0}
+    loop: 1
 --- !u!1 &1999199311661686565
 GameObject:
   m_ObjectHideFlags: 0
