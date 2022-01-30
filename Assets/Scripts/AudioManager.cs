@@ -94,7 +94,7 @@ public class AudioManager : MonoBehaviour
         Sound next = Array.Find(sounds, sound => sound.name == nextTrack);
 
         if(previous != null)
-            previous.source.Stop();
+            previous.source.Pause();
 
         if(next != null)
             next.source.Play();
