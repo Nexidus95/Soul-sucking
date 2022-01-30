@@ -34,5 +34,15 @@ public class Movement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+        if (move.magnitude > 0)
+            TriggerSound();
+    }
+
+    void TriggerSound()
+    {
+        int soundIndex = Random.Range(1, 5);
+        FindObjectOfType<AudioManager>().Play($"step_wood", soundIndex);
+        Debug.Log($"Sound trigger {soundIndex}");
     }
 }
