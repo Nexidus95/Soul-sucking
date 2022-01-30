@@ -51,15 +51,6 @@ public class DimensionSwitch : MonoBehaviour
             obj.SetActive(false);
     }
 
-    public void UpdateCurrentMap(string name)
-    {
-        string[] validNames = new string[] { "tutorial", "level1", "boss" };
-        if (validNames.Contains(name))
-            currentMap = name;
-        else
-            Debug.LogWarning("Not a valid map name");
-    }
-
     public void SwitchPlayingMusic()
     {
         FindObjectOfType<AudioManager>().ReplaceMusic(inSpirit);
