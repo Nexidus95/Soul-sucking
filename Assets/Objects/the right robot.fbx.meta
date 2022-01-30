@@ -1,0 +1,273 @@
+fileFormatVersion: 2
+guid: bbcc887b034fc4c4b9b62359f4228011
+ModelImporter:
+  serializedVersion: 21202
+  internalIDToNameTable:
+  - first:
+      74: 6304917887649073930
+    second: glow part.002|Cylinder.001Action.002
+  - first:
+      74: 8312144415343835176
+    second: glow part.002|CylinderAction.002
+  - first:
+      74: -8025544770346815125
+    second: glow part.002|ELEMENT_2|Main|Layer0.001
+  - first:
+      74: -1945701964484476511
+    second: glow part.002|ELEMENT_2|Main|Layer0.002
+  - first:
+      74: -8662887051992992442
+    second: glow part.002|ELEMENT_2|Main|Layer0.003
+  - first:
+      74: 7008397209787316436
+    second: glow part.002|ELEMENT_2|Main|Layer0.004
+  - first:
+      74: 234415600768656674
+    second: glow part.002|glow partAction.002
+  - first:
+      74: -5544090917509707878
+    second: glow part.002|rustygoldAction
+  - first:
+      74: -6593496969097921764
+    second: Cylinder.010|Cylinder.001Action.002
+  - first:
+      74: -8490696295408915409
+    second: Cylinder.010|CylinderAction.002
+  - first:
+      74: -8697981704567078582
+    second: Cylinder.010|ELEMENT_2|Main|Layer0.001
+  - first:
+      74: 4265581609621965194
+    second: Cylinder.010|ELEMENT_2|Main|Layer0.002
+  - first:
+      74: 794330968508202974
+    second: Cylinder.010|ELEMENT_2|Main|Layer0.003
+  - first:
+      74: -3578169972500027956
+    second: Cylinder.010|ELEMENT_2|Main|Layer0.004
+  - first:
+      74: 2278475051657065117
+    second: Cylinder.010|glow partAction.002
+  - first:
+      74: 8205236916425535803
+    second: Cylinder.010|rustygoldAction
+  - first:
+      74: -9134887987455854264
+    second: Cylinder.011|Cylinder.001Action.002
+  - first:
+      74: 5080143204475998704
+    second: Cylinder.011|CylinderAction.002
+  - first:
+      74: -919370948163973921
+    second: Cylinder.011|ELEMENT_2|Main|Layer0.001
+  - first:
+      74: -186630320259681266
+    second: Cylinder.011|ELEMENT_2|Main|Layer0.002
+  - first:
+      74: -2327092325897723361
+    second: Cylinder.011|ELEMENT_2|Main|Layer0.003
+  - first:
+      74: -3257340674909509884
+    second: Cylinder.011|ELEMENT_2|Main|Layer0.004
+  - first:
+      74: -8808380038520470217
+    second: Cylinder.011|glow partAction.002
+  - first:
+      74: -2026580479118862864
+    second: Cylinder.011|rustygoldAction
+  - first:
+      74: 1940221088692545088
+    second: ELEMENT_2.001|Cylinder.001Action.002
+  - first:
+      74: -9043429866813383422
+    second: ELEMENT_2.001|CylinderAction.002
+  - first:
+      74: 4580738339945662972
+    second: ELEMENT_2.001|ELEMENT_2|Main|Layer0.001
+  - first:
+      74: -910988394237072100
+    second: ELEMENT_2.001|ELEMENT_2|Main|Layer0.002
+  - first:
+      74: 2653915030364179320
+    second: ELEMENT_2.001|ELEMENT_2|Main|Layer0.003
+  - first:
+      74: 7890368850619356108
+    second: ELEMENT_2.001|ELEMENT_2|Main|Layer0.004
+  - first:
+      74: 2479125990356728290
+    second: ELEMENT_2.001|glow partAction.002
+  - first:
+      74: -6441003589837701467
+    second: ELEMENT_2.001|rustygoldAction
+  - first:
+      74: 7233935340512335111
+    second: ELEMENT_2.002|Cylinder.001Action.002
+  - first:
+      74: 7078454427531232760
+    second: ELEMENT_2.002|CylinderAction.002
+  - first:
+      74: 3276169051862598932
+    second: ELEMENT_2.002|ELEMENT_2|Main|Layer0.001
+  - first:
+      74: 8124759593464487425
+    second: ELEMENT_2.002|ELEMENT_2|Main|Layer0.002
+  - first:
+      74: -2481048327060099052
+    second: ELEMENT_2.002|ELEMENT_2|Main|Layer0.003
+  - first:
+      74: -6641497032811045271
+    second: ELEMENT_2.002|ELEMENT_2|Main|Layer0.004
+  - first:
+      74: -6621877372460426711
+    second: ELEMENT_2.002|glow partAction.002
+  - first:
+      74: -5815857306797999776
+    second: ELEMENT_2.002|rustygoldAction
+  - first:
+      74: -9035425072359831696
+    second: ELEMENT_2.003|Cylinder.001Action.002
+  - first:
+      74: -5178791508113102026
+    second: ELEMENT_2.003|CylinderAction.002
+  - first:
+      74: -3729274094480958755
+    second: ELEMENT_2.003|ELEMENT_2|Main|Layer0.001
+  - first:
+      74: -3743819590384663055
+    second: ELEMENT_2.003|ELEMENT_2|Main|Layer0.002
+  - first:
+      74: 1743053439277151432
+    second: ELEMENT_2.003|ELEMENT_2|Main|Layer0.003
+  - first:
+      74: 4172862790342983375
+    second: ELEMENT_2.003|ELEMENT_2|Main|Layer0.004
+  - first:
+      74: 884605196707469785
+    second: ELEMENT_2.003|glow partAction.002
+  - first:
+      74: 5844612771902044265
+    second: ELEMENT_2.003|rustygoldAction
+  - first:
+      74: -5974719786806518262
+    second: ELEMENT_2.004|Cylinder.001Action.002
+  - first:
+      74: -9108788335044203870
+    second: ELEMENT_2.004|CylinderAction.002
+  - first:
+      74: -4178499566701374014
+    second: ELEMENT_2.004|ELEMENT_2|Main|Layer0.001
+  - first:
+      74: 8484501997617219382
+    second: ELEMENT_2.004|ELEMENT_2|Main|Layer0.002
+  - first:
+      74: 1085554833237358804
+    second: ELEMENT_2.004|ELEMENT_2|Main|Layer0.003
+  - first:
+      74: -4001772089181459761
+    second: ELEMENT_2.004|ELEMENT_2|Main|Layer0.004
+  - first:
+      74: 1136079081906682017
+    second: ELEMENT_2.004|glow partAction.002
+  - first:
+      74: 5341926675964254008
+    second: ELEMENT_2.004|rustygoldAction
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 0
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
