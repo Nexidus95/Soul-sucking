@@ -110,8 +110,8 @@ NavMeshSettings:
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
-    ledgeDropHeight: 0
-    maxJumpAcrossDistance: 0
+    ledgeDropHeight: 5
+    maxJumpAcrossDistance: 5
     minRegionArea: 2
     manualCellSize: 0
     cellSize: 0.16666667
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 7fb0c47b013b10a41a3dccb42e1cc1dd, type: 2}
 --- !u!1 &688629368
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,15 +332,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1999199312194714925, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.73
+      value: 19.7
       objectReference: {fileID: 0}
     - target: {fileID: 1999199312194714925, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.39
+      value: 7.44
       objectReference: {fileID: 0}
     - target: {fileID: 1999199312194714925, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.33
+      value: 83.7
       objectReference: {fileID: 0}
     - target: {fileID: 1999199312194714925, guid: 46bac0631a09afc4eb3ef844745b37d5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -392,7 +392,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 715b5a4cd639b6942946e684c9a38145, type: 2}
+  - {fileID: 2100000, guid: b9084028842bd14429569d898306cb79, type: 2}
   - {fileID: 2100000, guid: 715b5a4cd639b6942946e684c9a38145, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -432,7 +432,7 @@ Transform:
   m_GameObject: {fileID: 1859452676385647621}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.1221247, y: 2.6031985, z: 0.88484097}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4.2883, y: 4.2883, z: 4.2883}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2317839364356005137}
@@ -449,7 +449,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1334696030652724927}
-  - component: {fileID: 1859452676385647622}
   m_Layer: 0
   m_Name: main level (spacestation)
   m_TagString: Untagged
@@ -457,20 +456,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1859452676385647622
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1859452676385647621}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &2020232332144777153
 Transform:
   m_ObjectHideFlags: 0
@@ -512,12 +497,13 @@ GameObject:
   - component: {fileID: 2020232332144777153}
   - component: {fileID: 7098576021187176586}
   - component: {fileID: 6695247874731653161}
+  - component: {fileID: 7098576021187176587}
   m_Layer: 0
   m_Name: platforming tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 40
   m_IsActive: 1
 --- !u!1 &4397303037689567126
 GameObject:
@@ -530,13 +516,28 @@ GameObject:
   - component: {fileID: 2317839364356005137}
   - component: {fileID: 234393743899924699}
   - component: {fileID: 11846430959338825}
+  - component: {fileID: 4397303037689567127}
   m_Layer: 0
   m_Name: floor1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 40
   m_IsActive: 1
+--- !u!64 &4397303037689567127
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4397303037689567126}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6940125351870108067, guid: 9bd2b82ff3f02334f811e49ea4b01628, type: 3}
 --- !u!23 &6695247874731653161
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -587,4 +588,18 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4275770970670354299}
+  m_Mesh: {fileID: 2612181362089243797, guid: 9bd2b82ff3f02334f811e49ea4b01628, type: 3}
+--- !u!64 &7098576021187176587
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4275770970670354299}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 2612181362089243797, guid: 9bd2b82ff3f02334f811e49ea4b01628, type: 3}
