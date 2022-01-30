@@ -13,6 +13,11 @@ public class WeaponRotate : MonoBehaviour
         desiredRot = transform.eulerAngles.z;
     }
 
+    private void OnLevelWasLoaded(int level)
+    {
+        desiredRot = transform.eulerAngles.z;
+    }
+
     private void Update()
     {
         if (Input.GetMouseButton(0))
