@@ -68,10 +68,12 @@ public class EnemyScript : MonoBehaviour
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
             walkPointSet = true;
     }
+
     private void ChasePlayer()
     {
         agent.SetDestination(player.position);
     }
+
     private void AttackPlayer()
     {
         agent.SetDestination(transform.position);
@@ -87,10 +89,12 @@ public class EnemyScript : MonoBehaviour
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
     }
+
     private void ResetAttack()
     {
         alreadyAttacked = false;
     }
+
     public void TakeDamage(int damage)
     {
         health -= damage;

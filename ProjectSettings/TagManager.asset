@@ -8,6 +8,7 @@ TagManager:
   - SpiritOnly
   - Bullet
   - Enemy
+  - SoulCollider
   layers:
   - Default
   - TransparentFX
