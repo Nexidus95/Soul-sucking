@@ -57,4 +57,10 @@ public class AudioManager : MonoBehaviour
         if (!s.Any(sound => sound.source.isPlaying))
             specific.source.Play();
     }
+
+    public void PlayRandom(string name, int rangeMinInclusive, int rangeMaxExclusive)
+    {
+        int soundIndex = UnityEngine.Random.Range(rangeMinInclusive, rangeMaxExclusive);
+        Play(name, soundIndex);
+    }
 }
