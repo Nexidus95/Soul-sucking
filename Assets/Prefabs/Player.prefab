@@ -634,8 +634,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5740372545297257400}
   - {fileID: 5705129258243516708}
+  - {fileID: 5740372545297257400}
   - {fileID: 1406132541}
   m_Father: {fileID: 1999199312714603123}
   m_RootOrder: 0
@@ -652,7 +652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622dd67fc9485f84c934d4efd3f81935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gun: {fileID: 0}
+  gun: {fileID: 4929014393376256926}
   sword: {fileID: 4963589963656022274}
   soulSucker: {fileID: 4929014393376256926}
 --- !u!1 &1999199312714603134
@@ -917,7 +917,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3b00ef5f3f556794cb2f184973addf30, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b00ef5f3f556794cb2f184973addf30, type: 3}
       propertyPath: m_LocalScale.x
@@ -1015,7 +1015,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 29ed58c247c41264698f1805acc9e5aa, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 29ed58c247c41264698f1805acc9e5aa, type: 3}
       propertyPath: m_LocalScale.x
