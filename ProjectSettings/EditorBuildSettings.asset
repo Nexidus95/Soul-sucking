@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial.unity
     guid: ce1f81ba6a0b0974096d812c02c04a14
   - enabled: 1
+    path: Assets/Scenes/SpaceStation.unity
+    guid: e6112cb2ee63f4e4590c47de4f5fb935
+  - enabled: 1
     path: Assets/Scenes/BossFightArena.unity
     guid: 6f207892ebd9a144ea2d69b21fa3a524
   m_configObjects: {}
