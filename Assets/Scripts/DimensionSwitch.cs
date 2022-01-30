@@ -42,7 +42,7 @@ public class DimensionSwitch : MonoBehaviour
             obj.SetActive(true);
         deactivatedObjects.Clear();
 
-        var objectsToDeactivate = inSpirit ? GameObject.FindGameObjectsWithTag("SpiritOnly") : GameObject.FindGameObjectsWithTag("MaterialOnly");
+        var objectsToDeactivate = !inSpirit ? GameObject.FindGameObjectsWithTag("SpiritOnly") : GameObject.FindGameObjectsWithTag("MaterialOnly");
         deactivatedObjects.AddRange(objectsToDeactivate);
 
         foreach (var obj in objectsToDeactivate)
