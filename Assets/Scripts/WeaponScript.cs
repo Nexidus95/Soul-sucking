@@ -103,6 +103,7 @@ public class WeaponScript : MonoBehaviour
 
         //Direction with spread
         Vector3 directionWithSpread = directionWithoutSpread + new Vector3(x, y, 0);
+        FindObjectOfType<AudioManager>().PlayRandomOverride($"laser", 1, 4);
 
         GameObject currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity);
         currentBullet.transform.forward = directionWithSpread.normalized;
@@ -113,7 +114,6 @@ public class WeaponScript : MonoBehaviour
         if(muzzleFlash != null)
         {
             Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
-            FindObjectOfType<AudioManager>().PlayRandom($"laser", 1, 4);
         }
 
         bulletsleft--;

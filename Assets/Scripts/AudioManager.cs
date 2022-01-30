@@ -63,4 +63,28 @@ public class AudioManager : MonoBehaviour
         int soundIndex = UnityEngine.Random.Range(rangeMinInclusive, rangeMaxExclusive);
         Play(name, soundIndex);
     }
+
+    public void PlayRandomOverride(string name, int rangeMinInclusive, int rangeMaxExclusive)
+    {
+        int soundIndex = UnityEngine.Random.Range(rangeMinInclusive, rangeMaxExclusive);
+        PlayOverride(name, soundIndex);
+    }
+
+    void PlayOverride(string name, int index)
+    {
+        var s = Array.FindAll(sounds, sound => sound.name.Contains(name));
+        var specific = Array.Find(sounds, sound => sound.name == $"{name}_{index}");
+        if (s == null || specific == null)
+        {
+            Debug.LogWarning($"Sound {name} not found");
+            return;
+        }
+
+        foreach(var sound in s)
+        {
+            sound.source.Stop();
+        }
+
+        specific.source.Play();
+    }
 }

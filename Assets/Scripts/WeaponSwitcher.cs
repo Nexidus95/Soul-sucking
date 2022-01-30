@@ -6,14 +6,13 @@ public class WeaponSwitcher : MonoBehaviour
 {
     public GameObject gun;
     public GameObject sword;
-    public GameObject soulSucker;
 
     private WeaponType currentlyEquipped = WeaponType.None;
 
     void Start()
     {
-        GameObject[] weapons = new GameObject[] { gun, sword, soulSucker };
-        for(int i = 0; i < 3; i++)
+        GameObject[] weapons = new GameObject[] { gun, sword };
+        for(int i = 0; i < 2; i++)
         {
             if(weapons[i].activeSelf)
             {
@@ -42,23 +41,15 @@ public class WeaponSwitcher : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play($"weapon_switch_sword");
                 gun.SetActive(false);
                 sword.SetActive(true);
-                soulSucker.SetActive(false);
-                break;
-            case WeaponType.SoulSucker:
-                gun.SetActive(false);
-                sword.SetActive(false);
-                soulSucker.SetActive(true);
                 break;
             case WeaponType.Gun:
                 FindObjectOfType<AudioManager>().Play($"weapon_switch_gun");
                 gun.SetActive(true);
                 sword.SetActive(false);
-                soulSucker.SetActive(false);
                 break;
             default:
                 gun.SetActive(false);
                 sword.SetActive(false);
-                soulSucker.SetActive(false);
                 break;
         }
     }
@@ -84,5 +75,4 @@ public enum WeaponType
     None = 0,
     Gun,
     Sword,
-    SoulSucker,
 }
