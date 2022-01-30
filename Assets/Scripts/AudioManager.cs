@@ -7,7 +7,7 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
     public static AudioManager instance;
-
+    public string currentMap = "boss";
     private void Awake()
     {
         if(instance == null)
@@ -88,15 +88,18 @@ public class AudioManager : MonoBehaviour
         specific.source.Play();
     }
 
-    public void ReplaceMusic(string previousTrack, string nextTrack)
+    public void ReplaceMusic(bool inSpirit)
     {
-        Sound previous = Array.Find(sounds, sound => sound.name == previousTrack);
-        Sound next = Array.Find(sounds, sound => sound.name == nextTrack);
+        string playString = inSpirit ? "soul" : "mat";
+        string pauseString = inSpirit ? "mat" : "soul";
 
-        if(previous != null)
-            previous.source.Pause();
+        Sound play = Array.Find(sounds, sound => sound.name == $"{currentMap}_{playString}");
+        Sound pause = Array.Find(sounds, sound => sound.name == $"{currentMap}_{pauseString}");
 
-        if(next != null)
-            next.source.Play();
+        if(pause != null)
+            pause.source.Pause();
+
+        if(play != null)
+            play.source.Play();
     }
 }

@@ -15,8 +15,6 @@ public class DimensionSwitch : MonoBehaviour
 
     bool inSpirit = false;
 
-    string currentMap = "boss";
-
     void Start()
     {
         dimensionSwitchEvent.AddListener(ToggleDimensionObjects);
@@ -64,9 +62,6 @@ public class DimensionSwitch : MonoBehaviour
 
     public void SwitchPlayingMusic()
     {
-        if (inSpirit)
-            FindObjectOfType<AudioManager>().ReplaceMusic($"{currentMap}_mat", $"{currentMap}_soul");
-        else
-            FindObjectOfType<AudioManager>().ReplaceMusic($"{currentMap}_soul", $"{currentMap}_mat");
+        FindObjectOfType<AudioManager>().ReplaceMusic(inSpirit);
     }
 }
